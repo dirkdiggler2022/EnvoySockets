@@ -1,18 +1,17 @@
 version: '3.4'
 
 services:
-  front-envoy:
+  proxy-ws:
     image: envoyproxy/envoy:v1.19-latest
     volumes:
-      - ./envoy/envoy.yaml:/etc/envoy/envoy.yaml
+      - ./envoy/envoy.yaml:/etc/envoy/envoy.yaml 
     ports:
-      - "8000:8000"  # Expose Envoy on port 80
-      - "8443:8443"
+      - "10000:10000" 
     depends_on:
-      - publicserver
-  
-  publicserver:
-    image: ${DOCKER_REGISTRY-}publicserver
+      - ws.server
+
+  ws.server:
+    image: ${DOCKER_REGISTRY-}wsserver
     build:
       context: .
-      dockerfile: PublicServer/Dockerfile
+      dockerfile: WS.Server/Dockerfile

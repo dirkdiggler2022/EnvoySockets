@@ -8,7 +8,16 @@ namespace WS.Server
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            
             var app = builder.Build();
+
+            // <snippet_UseWebSockets>
+            var webSocketOptions = new WebSocketOptions
+            {
+                KeepAliveInterval = TimeSpan.FromMinutes(2)
+            };
+
+            app.UseWebSockets(webSocketOptions);
 
             app.MapGet("/", () => "Hello World!");
 

@@ -5,17 +5,16 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicServer", "PublicServer\PublicServer.csproj", "{95270F61-B6D4-4FFB-A551-289CE03944CA}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E8CBB951-1743-4CC1-AFC9-067DE630A2EA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "envoy", "envoy", "{1D45E792-863B-4271-A68A-EC7040A09A94}"
 	ProjectSection(SolutionItems) = preProject
-		envoy-ws.yaml = envoy-ws.yaml
 		envoy\envoy.yaml = envoy\envoy.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sockets", "sockets", "{AA9569D5-8E83-4F8B-908D-9F9F7CE07DCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Server", "WS.Server\WS.Server.csproj", "{20FC4552-2EFA-4DF8-972E-89DF82F292EC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +26,14 @@ Global
 		{95270F61-B6D4-4FFB-A551-289CE03944CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95270F61-B6D4-4FFB-A551-289CE03944CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95270F61-B6D4-4FFB-A551-289CE03944CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E8CBB951-1743-4CC1-AFC9-067DE630A2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8CBB951-1743-4CC1-AFC9-067DE630A2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8CBB951-1743-4CC1-AFC9-067DE630A2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8CBB951-1743-4CC1-AFC9-067DE630A2EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{20FC4552-2EFA-4DF8-972E-89DF82F292EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{20FC4552-2EFA-4DF8-972E-89DF82F292EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20FC4552-2EFA-4DF8-972E-89DF82F292EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20FC4552-2EFA-4DF8-972E-89DF82F292EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

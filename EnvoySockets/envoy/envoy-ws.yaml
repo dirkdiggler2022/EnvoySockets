@@ -39,5 +39,5 @@ static_resources:
         - endpoint:
             address:
               socket_address:
-                address: service-ws
+                address: ws.server
                 port_value: 8080

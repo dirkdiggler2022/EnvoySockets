@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "envoy", "envoy", "{1D45E792-863B-4271-A68A-EC7040A09A94}"
 	ProjectSection(SolutionItems) = preProject
 		envoy\envoy-ws.yaml = envoy\envoy-ws.yaml
+		envoy.yaml = envoy.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sockets", "sockets", "{AA9569D5-8E83-4F8B-908D-9F9F7CE07DCF}"
@@ -15,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Server", "WS.Server\WS.Server.csproj", "{20FC4552-2EFA-4DF8-972E-89DF82F292EC}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Client", "WS.Client\WS.Client.csproj", "{6CC3EA24-8E8A-4FED-A4D1-79FE7CE2E983}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,12 +37,17 @@ Global
 		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3AE1FE2-71B1-4FD9-BACB-DF5EF48CF056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC3EA24-8E8A-4FED-A4D1-79FE7CE2E983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC3EA24-8E8A-4FED-A4D1-79FE7CE2E983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC3EA24-8E8A-4FED-A4D1-79FE7CE2E983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC3EA24-8E8A-4FED-A4D1-79FE7CE2E983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{20FC4552-2EFA-4DF8-972E-89DF82F292EC} = {AA9569D5-8E83-4F8B-908D-9F9F7CE07DCF}
+		{6CC3EA24-8E8A-4FED-A4D1-79FE7CE2E983} = {AA9569D5-8E83-4F8B-908D-9F9F7CE07DCF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {935E346A-266F-44BB-BBF8-4A2452FA3B53}

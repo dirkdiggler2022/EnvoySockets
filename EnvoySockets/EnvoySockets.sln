@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "envoy", "envoy", "{1D45E792
 	ProjectSection(SolutionItems) = preProject
 		envoy\envoy-ws-passthrough.yaml = envoy\envoy-ws-passthrough.yaml
 		envoy\envoy-ws.yaml = envoy\envoy-ws.yaml
+		envoy\envoy.yaml = envoy\envoy.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sockets", "sockets", "{AA9569D5-8E83-4F8B-908D-9F9F7CE07DCF}"

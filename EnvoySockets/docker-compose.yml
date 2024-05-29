@@ -10,8 +10,18 @@ services:
     depends_on:
       - ws.server
 
+      
+  proxy-ws-passthrough:
+    image: envoyproxy/envoy:v1.19-latest
+    volumes:
+      - ./envoy/envoy-ws.yaml:/etc/envoy/envoy.yaml 
+    ports:
+      - "30000:10000" 
+    depends_on:
+      - ws.server
+
   ws.server:
-    image: ${DOCKER_REGISTRY-}wsserver
+    image: ${DOCKER_REGISTRY-}publicserver
     build:
       context: .
-      dockerfile: WS.Server/Dockerfile
+      dockerfile: PublicServer/Dockerfile
